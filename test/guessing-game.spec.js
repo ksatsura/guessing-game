@@ -3037,6 +3037,7 @@ describe('#guess', () => {
         const number = 998;
         const game = new GuessingGame();
         game.setRange(0, 6118)
+		
 
         let result = game.guess();
         game.lower();
@@ -3061,6 +3062,8 @@ describe('#guess', () => {
         result = game.guess();
         game.greater();
         result = game.guess();
+		
+		
 
         expect(result).to.equal(number);
     });
